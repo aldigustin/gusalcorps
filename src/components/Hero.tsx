@@ -92,7 +92,7 @@ export const Hero: React.FC = () => {
               <div className="relative rounded-2xl overflow-hidden bg-slate-900/90 border border-slate-200/40 dark:border-sky-500/20 shadow-2xl">
                 <div className="aspect-square w-full relative overflow-hidden bg-slate-950">
                   <img
-                    src={profile.avatarUrl}
+                    src="https://raw.githubusercontent.com/aldigustin/FIle-Photo/refs/heads/main/Photo%201.jpeg"
                     alt={`${profile.name} - ${profile.headline}`}
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
