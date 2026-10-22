@@ -39,17 +39,16 @@ export const Hero: React.FC = () => {
 
             {/* Lead Prose */}
             <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-8 max-w-2xl">
-              {profile.tagline ||
-                "Telecommunications Engineering graduate dedicated to building resilient network infrastructure, solving complex IT challenges, and delivering modern digital systems."}
+              Telecommunications Engineering graduate focused on reliable Technical Support, rapid hardware & software troubleshooting, structured data workflows, and modern digital support systems.
             </p>
 
             {/* Action Buttons */}
             <div className="flex flex-wrap items-center gap-4 mb-8">
               <button
-                onClick={() => handleScrollTo('projects')}
+                onClick={() => handleScrollTo('experience')}
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold text-slate-950 bg-sky-400 hover:bg-sky-300 dark:bg-sky-400 dark:hover:bg-sky-300 rounded-xl shadow-lg shadow-sky-500/20 hover:shadow-sky-400/30 transition-all duration-200 cursor-pointer"
               >
-                <span>Explore Projects</span>
+                <span>Explore Experience</span>
                 <ArrowDownRight className="w-4 h-4" />
               </button>
 

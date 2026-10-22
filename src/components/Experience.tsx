@@ -13,8 +13,7 @@ export const Experience: React.FC = () => {
     period: '',
     location: '',
     description: '',
-    achievements: '',
-    skillsApplied: ''
+    achievements: ''
   });
 
   const handleAddNewSubmit = (e: React.FormEvent) => {
@@ -31,9 +30,7 @@ export const Experience: React.FC = () => {
       achievements: newRole.achievements
         ? newRole.achievements.split('\n').filter(a => a.trim().length > 0)
         : ['Assisted end-users with daily hardware and network inquiries.'],
-      skillsApplied: newRole.skillsApplied
-        ? newRole.skillsApplied.split(',').map(s => s.trim()).filter(Boolean)
-        : ['IT Support', 'Troubleshooting']
+      skillsApplied: []
     };
 
     addExperience(newExp);
@@ -44,8 +41,7 @@ export const Experience: React.FC = () => {
       period: '',
       location: '',
       description: '',
-      achievements: '',
-      skillsApplied: ''
+      achievements: ''
     });
   };
 
@@ -287,19 +283,6 @@ export const Experience: React.FC = () => {
                       </ul>
                     </div>
                   )}
-
-                  {/* Unboxed applied skills */}
-                  <div className="pt-3 border-t border-slate-100 dark:border-slate-800/80 text-[11px] text-slate-500 dark:text-slate-400 flex flex-wrap items-center gap-x-2 gap-y-1">
-                    <span className="font-semibold text-slate-700 dark:text-slate-300">Applied Skills:</span>
-                    {exp.skillsApplied.map((skill, idx) => (
-                      <React.Fragment key={skill}>
-                        <span>{skill}</span>
-                        {idx < exp.skillsApplied.length - 1 && (
-                          <span aria-hidden="true" className="text-slate-300 dark:text-slate-600">·</span>
-                        )}
-                      </React.Fragment>
-                    ))}
-                  </div>
                 </div>
               ))}
             </div>
@@ -350,7 +333,7 @@ export const Experience: React.FC = () => {
                       Undergraduate Engineering Capstone
                     </span>
                     <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-300">
-                      {edu.capstoneProject}
+                      Classification of Bird Sound Using Deep Learning Based On Compressive Sensing
                     </p>
                   </div>
                 )}

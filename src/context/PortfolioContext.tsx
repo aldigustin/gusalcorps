@@ -2,7 +2,7 @@ import React, { createContext, useContext, useEffect, useState } from 'react';
 import { initialPortfolioData } from '../data/defaultData';
 import { EducationItem, ExperienceItem, PortfolioData, ProfileData, ProjectItem } from '../types/portfolio';
 
-const STORAGE_KEY = 'gusal_portfolio_data_v1';
+const STORAGE_KEY = 'gusal_portfolio_data_v5';
 const THEME_KEY = 'gusal_theme_mode';
 
 interface PortfolioContextType {

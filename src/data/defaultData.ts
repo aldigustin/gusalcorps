@@ -51,7 +51,7 @@ export const initialPortfolioData: PortfolioData = {
           id: "sup-4",
           name: "Remote Support & Service Desk",
           level: "Advanced",
-          tools: ["TeamViewer", "AnyDesk", "RDP", "Ticketing Portals"],
+          tools: ["TeamViewer", "AnyDesk", "Parsec"],
           description: "Remote desktop diagnostics, command-line triage, and clear step-by-step guidance for non-technical users."
         }
       ]
@@ -176,120 +176,40 @@ export const initialPortfolioData: PortfolioData = {
       ]
     }
   ],
-  projects: [
-    {
-      id: "proj-1",
-      title: "Enterprise Multi-VLAN Network & Proactive Monitoring",
-      category: "networking",
-      categoryLabel: "Network Infrastructure",
-      summary: "Designed and simulated a segmented multi-department network architecture with secure VLANs, dynamic routing, and centralized monitoring.",
-      fullDescription: "Built a complete campus network topology separating Administrative, Guest, and Server subnets using 802.1Q trunking and Layer-3 switching. Integrated SNMP polling to monitor link utilization, packet loss, and interface status in real time. Validated firewall access control lists (ACLs) to enforce strict isolation between guest Wi-Fi and production servers.",
-      imageUrl: "/src/assets/images/project_network_infra_1792640435862.jpg",
-      technologies: ["Cisco Packet Tracer", "802.1Q VLANs", "SNMP Monitoring", "Wireshark", "Network ACLs", "Subnetting"],
-      highlights: [
-        "Eliminated broadcast collisions across 4 departments through strict VLAN segmentation",
-        "Constructed failover routing paths to ensure high availability for core network services",
-        "Authored complete IP allocation plan and network topology documentation"
-      ],
-      role: "Network Infrastructure Designer & Analyst",
-      githubUrl: "https://github.com/gustinaldi/enterprise-vlan-architecture"
-    },
-    {
-      id: "proj-2",
-      title: "IT Helpdesk & Incident Resolution Workflow",
-      category: "it-support",
-      categoryLabel: "IT Support Operations",
-      summary: "Standardized ticketing resolution workflows, diagnostic checklists, and knowledge base documentation for rapid issue triage.",
-      fullDescription: "Implemented a structured incident management framework based on ITIL fundamentals. Created a reusable repository of troubleshooting scripts and hardware testing checklists (power cycles, RAM tests, NIC verification, OS registry corrections). Cut down average incident resolution times by providing clear Tier-1 self-service guides for routine printer, VPN, and credential issues.",
-      imageUrl: "/src/assets/images/project_it_helpdesk_1792640436475.jpg",
-      technologies: ["ITIL Best Practices", "Hardware Diagnostics", "Remote Access Tools", "Runbook Documentation", "Windows/Linux Administration"],
-      highlights: [
-        "Reduced recurrent common user ticket queries through step-by-step visual SOPs",
-        "Documented standard diagnostic flowcharts for hardware POST errors and network drops",
-        "Established standardized workstation provisioning checklist for new team members"
-      ],
-      role: "IT Support Specialist & Runbook Author",
-      liveUrl: "#contact"
-    },
-    {
-      id: "proj-3",
-      title: "Telecommunications Telemetry & Wireless Sensor Station",
-      category: "telecom",
-      categoryLabel: "Telecommunications & IoT",
-      summary: "Built an RF telemetry signal acquisition station recording environmental data with live serial data logging and packet integrity checks.",
-      fullDescription: "Combined Telecommunications Engineering signal theory with hands-on microcontroller hardware to capture telemetry data over 433MHz / 2.4GHz wireless bands. Implemented CRC checksum verification to detect RF packet loss, logged incoming data streams into a structured SQLite/CSV database, and visualized transmission stability across varying distance and attenuation barriers.",
-      imageUrl: "/src/assets/images/project_telecom_iot_1792640435838.jpg",
-      technologies: ["RF Communication", "Microcontrollers", "Signal Modulation", "Python Data Logger", "Oscilloscope Verification", "Serial Protocols"],
-      highlights: [
-        "Tested digital signal attenuation through concrete and metallic obstacles",
-        "Programmed automated parity checks ensuring zero corrupt data writes in logging pipeline",
-        "Analyzed RF frequency drift using benchtop spectrum analyzer and oscilloscope"
-      ],
-      role: "Lead Hardware & Telemetry Developer",
-      githubUrl: "https://github.com/gustinaldi/telecom-rf-telemetry"
-    },
-    {
-      id: "proj-4",
-      title: "GusAL IT Asset & Maintenance Tracking Portal",
-      category: "digital-web",
-      categoryLabel: "Digital Solutions & Data",
-      summary: "Lightweight internal web portal to manage IT hardware lifecycle, serial inventories, warranty terms, and maintenance audit logs.",
-      fullDescription: "Developed a clean, responsive single-page application built for small-to-medium enterprise IT departments. Enables technicians to register hardware assets (laptops, monitors, switches, accessories), log maintenance actions, schedule periodic preventive checkups, and export structured inventory reports in CSV format.",
-      imageUrl: "/src/assets/images/project_it_helpdesk_1792640436475.jpg",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Data Export / CSV", "Local Storage Persistence", "Search & Filtering"],
-      highlights: [
-        "Real-time search, multi-field category filters, and asset condition tracking",
-        "Client-side data persistence with instant CSV export for auditing and procurement",
-        "Responsive interface tailored for technicians working on both mobile phones and desktop benches"
-      ],
-      role: "Frontend Engineer & Solutions Designer",
-      githubUrl: "https://github.com/gustinaldi/gusal-asset-manager"
-    }
-  ],
+  projects: [],
   experiences: [
     {
       id: "exp-1",
-      role: "IT Support & Systems Technician",
-      organization: "GusAL Solutions / IT Services",
-      period: "2024 — Present",
+      role: "IT Support Technician",
+      organization: "Universitas Sulawesi Tenggara",
+      period: "2024 — 2026",
       location: "Indonesia",
       description: "Delivering hands-on technical support, hardware repairs, workstation provisioning, and network stability maintenance.",
       achievements: [
-        "Triaged and resolved 150+ user technical incidents encompassing Windows/macOS troubleshooting, software licensing, and driver conflicts.",
-        "Assembled, tested, and configured custom workstation builds with verified benchmark stability and clean cable management.",
-        "Maintained office Wi-Fi and LAN infrastructure, configuring router DHCP scopes, QoS parameters, and backup cellular 4G/5G failovers.",
+        "Successfully maintained a 98% data accuracy rate across over 200+ student academic records, ensuring timely updates within each academic semester.",
+        "Edited and prepared over 20 event-related documents and presentations annually, achieving high quality and consistency across all materials.",
+        "Operated technical equipment for 15+ campus events per semester, maintaining a 95% satisfaction rate among event organizers for technical support and reliability.",
+        "Maintained office Wi-Fi and LAN infrastructure, configuring router DHCP scopes, QoS parameters, and backup failovers.",
         "Authored 20+ comprehensive IT runbooks covering remote access setups, software deployment, and peripheral configuration."
       ],
-      skillsApplied: ["Hardware Troubleshooting", "OS Configuration", "Router/AP Management", "Technical Runbooks", "Customer Service"]
+      skillsApplied: []
     },
     {
       id: "exp-2",
-      role: "Network Engineering & Telecommunications Intern",
-      organization: "Infrastructure & Telecommunications Laboratory",
-      period: "2023 — 2024",
-      location: "Academic / Technical Campus",
-      description: "Assisted laboratory staff in maintaining networking equipment, testing communication channels, and guiding student cohorts during lab practicums.",
+      role: "Laboratorium Administrator",
+      organization: "PT Jasa Mutu Mineral Indonesia",
+      period: "2026",
+      location: "Indonesia",
+      description: "Managing laboratory equipment infrastructure, digital records, testing devices, and technical operations.",
       achievements: [
-        "Audited rack cabling, labeled patch panels, and terminated RJ-45 Cat5e/Cat6 connections with 100% pinout test passes.",
-        "Demonstrated Wireshark packet capture analysis to identify packet loss and latency anomalies across switched network topologies.",
-        "Assisted in configuring laboratory Cisco switches and routers for RIP, OSPF, and VLAN trunking lab experiments.",
-        "Maintained hardware inventory for 60+ laboratory PCs, diagnostic multimeters, spectrum analyzers, and testing kits."
+        "Maintained 95–98% accuracy in recording sample quantities, details, registration, labeling, and laboratory documentation, handling 2,000+ samples within six months.",
+        "Prepared Work Order (WO) forms and coordinated the transfer of registered samples to the sample preparation team.",
+        "Coordinated sample handling between the laboratory administration and preparation teams to ensure a smooth and traceable workflow.",
+        "Received and reviewed documentation and analytical reports following the completion of sample preparation and testing.",
+        "Performed data entry, document control, filing, and other laboratory administrative duties while maintaining accuracy and confidentiality.",
+        "Supported the implementation of laboratory quality procedures by ensuring sample and document traceability throughout the testing process."
       ],
-      skillsApplied: ["Cisco IOS", "Packet Analysis", "RJ-45 Crimping", "Network Topologies", "Laboratory Inventory"]
-    },
-    {
-      id: "exp-3",
-      role: "Digital Operations & Technical Assistant",
-      organization: "Campus Computing & Student Services",
-      period: "2022 — 2023",
-      location: "Campus IT Center",
-      description: "Supported campus-wide digital platform adoption, credential provisioning, and classroom multimedia presentation setups.",
-      achievements: [
-        "Assisted faculty and students with single-sign-on (SSO) credentials, portal troubleshooting, and student email setups.",
-        "Supported AV/multimedia audio-visual equipment and wireless projection systems across lecture halls.",
-        "Entered and maintained structured academic equipment loan data using advanced Google Sheets formulas."
-      ],
-      skillsApplied: ["User Access Management", "AV / Multimedia Hardware", "Spreadsheet Modeling", "First-Contact Resolution"]
+      skillsApplied: []
     }
   ],
   education: [
@@ -310,7 +230,7 @@ export const initialPortfolioData: PortfolioData = {
         "Microcontroller Systems & Telemetry",
         "Database Systems & Information Technology"
       ],
-      capstoneProject: "Design and Evaluation of Wireless Telemetry Signal Transmission with Packet Integrity Verification over Impaired Channels."
+      capstoneProject: "Classification of Bird Sound Using Deep Learning Based On Compressive Sensing"
     }
   ]
 };

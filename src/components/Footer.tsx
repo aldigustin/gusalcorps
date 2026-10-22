@@ -81,7 +81,7 @@ export const Footer: React.FC = () => {
             <span aria-hidden="true">·</span>
             <a href="#skills" className="hover:text-slate-300 transition-colors">Skills</a>
             <span aria-hidden="true">·</span>
-            <a href="#projects" className="hover:text-slate-300 transition-colors">Projects</a>
+            <a href="#experience" className="hover:text-slate-300 transition-colors">Experience</a>
             <span aria-hidden="true">·</span>
             <a href="#contact" className="hover:text-slate-300 transition-colors">Contact</a>
           </div>
